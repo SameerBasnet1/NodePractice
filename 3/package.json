@@ -1,0 +1,19 @@
+{
+  "name": "3",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Sameer",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "uuid": "^11.1.0" 
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
