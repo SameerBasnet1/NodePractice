@@ -1,0 +1,5 @@
+20250306	15:05:03	fef865aa-5a8e-4ffb-b590-25c37f18fedf	TypeError: contentType.inclused is not a function
+20250306	15:05:11	87b2aa31-9e89-4090-ae7b-df673e35dbae	TypeError: contentType.inclused is not a function
+20250306	15:05:15	afaaf04e-e5d9-49a9-9d56-7487b7e64b6a	TypeError: contentType.inclused is not a function
+20250306	15:05:15	af137aaa-cc78-44da-9397-1012c7b3b7e4	TypeError: contentType.inclused is not a function
+20250306	15:05:17	1fb7dda7-6bbd-42bd-9b67-3cf0f77804b3	TypeError: contentType.inclused is not a function

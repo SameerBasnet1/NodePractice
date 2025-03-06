@@ -5,9 +5,9 @@
   "license": "ISC",
   "author": "Sameer",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

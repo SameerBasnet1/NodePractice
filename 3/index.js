@@ -17,18 +17,18 @@
 
 
 // Event Emitter Index.js  for chap4
-// const logEvents = require('./logEvents');
-// const EventEmitter = require('events');
+const logEvents = require('./logEvents');
+const EventEmitter = require('events');
 
-// class MyEmitter extends EventEmitter {}
+class MyEmitter extends EventEmitter {}
 
-// // Initialize object
-// const myEmitter = new MyEmitter();
+// Initialize object
+const myEmitter = new MyEmitter();
 
-// // Add listener for the log event
-// myEmitter.on('log', (msg) => logEvents(msg));
+// Add listener for the log event
+myEmitter.on('log', (msg) => logEvents(msg));
 
-// setTimeout(() => {
-//     // Emit event
-//     myEmitter.emit('log', 'Log event emitted');
-// }, 2000);
+setTimeout(() => {
+    // Emit event
+    myEmitter.emit('log', 'Log event emitted');
+}, 2000);
