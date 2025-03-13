@@ -26,4 +26,33 @@ app.get('^/$|/old-page(.html)?',(req,res)=>{
     res.redirect(301,'/new-page.html');//302 by default
 });
 
+
+//Route handlers
+app.get('/hello(.html)?',(req,res,next)=>{
+    console.log('Attempting to load hello.html');
+    next();
+},(req,res)=>{
+    res.send("Hello World");
+})
+
+const one=(req,res,next)=>{
+    console.log('One');
+    next();
+}
+const two=(req,res,next)=>{ 
+    console.log('Two');
+    next();
+}
+const three=(req,res)=>{        
+    console.log('Three');
+    res.send('Finished');
+}
+
+app.get('/chain(.html)?',[one,two,three]);
+
+app.get('/*',(req,res)=>{
+     res.sendFile(path.join(__dirname,'views','404.html'));
+})
+
+
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
