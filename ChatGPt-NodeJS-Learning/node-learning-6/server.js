@@ -7,7 +7,9 @@ app.use(express.json());
 
 //Import user routes
 const userRoutes = require('./routes/users');
-app.use('/api/users'.userRoutes);
+
+//use the user routes
+app.use('/api/users',userRoutes);
 
 app.listen(port,()=>{
     console.log(`Server is running on htttp://localhost:${port}`);
